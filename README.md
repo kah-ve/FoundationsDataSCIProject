@@ -2,7 +2,8 @@
 
 ### Given a table of log normalized stock data with 9 unknown companies in the same industry and 21 days of data for each (making 9 * 21 = 189 columns) over the past 2500 days. Total table is 2500 rows with 189 columns. Also given the future values of company 4 as the Y to train against. Need to build the best regression and classification models that will give the best predictions for new company 4 data that will be fed in to our trained models. 
 
-## Results: Ended up using a Random Forest with parameters 
+### Results: 
+#### Ended up using a Random Forest with parameters below that were finally found through RandomizedSearchCV.
 
     params = {
      'n_estimators': 1400,
